@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Doctors</title>
+    <link rel="stylesheet" href="new doctor.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo pic.png" alt="Animal Doctors Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="find a doctor.html">Find A Doctor</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <button class="search-btn" onclick="toggleSearch()">Search</button>
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+    <section class="about-services">
+        <div class="content-box">
+            <div class="text-content">
+                <h2>We Are Providing</h2>
+                <h1>Best Medical Services</h1>
+                <p>Our animal doctors are dedicated to providing exceptional medical services for pets of all kinds. From routine check-ups to emergency care, we ensure the health and well-being of your beloved animals. With state-of-the-art facilities and compassionate care, we strive to exceed your expectations.</p>
+                <button href="find a doctor.html" class="find-doctor-btn">Find a Doctor</button>
+            </div>
+            <div class="image-content">
+                <img src="doctor image.jpg" alt="Animal Medical Services">
+            </div>
+        </div>
+    </section>
+    <!-- Our Services Section -->
+    <section class="our-services">
+        <h1>Our Services</h1>
+        <div class="services-container">
+            <div class="service-box">
+                <img src="service1.jpg" alt="Service 1">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="read-more-box">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- Repeat similar service-box structure for 6 services -->
+        </div>
+    </section>
+
+    <!-- Meet Our Experts Section -->
+    <section class="meet-our-experts">
+        <h2>Meet Our Experts</h2>
+        <div class="experts-container">
+            <div class="expert-box">
+                <img src="IMG_20240214_123737_399.jpg">
+                <h3>Dr. Ali Akbar</h3>
+                <p>Contact: <a href="tel:03020419521">+923020419521</a></p>
+            </div>
+            <div class="expert-box">
+                <img src="IMG_20240229_114110_346.jpg">
+                <h3>Dr. Umair Maqbool</h3>
+                <p>Contact: <a href="tel:03074677288">+923074677288</a></p>
+            </div>
+            <!-- Repeat similar expert-box structure for 3 experts -->
+        </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section class="user-reviews">
+        <h2>User Reviews</h2>
+        <div class="reviews-container">
+            <div class="review-box">
+                <img src="Snapchat-2077704670.jpg" alt="User 1">
+                <p>This is the best website for animals</p>
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <!-- Repeat similar review-box structure for 3 reviews -->
+        </div>
+    </section>
+
+    <script>
+        function toggleSearch() {
+            var searchBar = document.getElementById('search-bar');
+            if (searchBar.style.display === 'block') {
+                searchBar.style.display = 'none';
+            } else {
+                searchBar.style.display = 'block';
+                searchBar.focus();
+            }
+        }
+    </script>
+</body>
+</html>

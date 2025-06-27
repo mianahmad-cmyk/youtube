@@ -1,0 +1,327 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+header {
+    background:#f0f0f0;
+    color:blue;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: 1px solid black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color:blue:
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: none;
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 50px 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.service-box {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service-box h1 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.service-box p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.read-more-box {
+    margin-top: 20px;
+}
+
+.read-more-box a {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.read-more-box a:hover {
+    background-color: #0056b3;
+}
+
+/* Meet Our Experts Section */
+.meet-our-experts {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.experts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.expert-box {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.expert-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.expert-box h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.expert-box p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.expert-box a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.expert-box a:hover {
+    text-decoration: underline;
+}
+
+/* User Reviews Section */
+.user-reviews {
+    padding: 50px 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.review-box {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.review-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-box p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.stars {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #f2b600;
+}
+
+.star {
+    color: #f2b600;
+}
+/* About Services Section */
+.about-services {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.text-content h2 {
+    color: #007BFF;
+}
+
+.text-content h1 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.text-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* About Services Section */
+.about-services {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.text-content h2 {
+    color: #007BFF;
+}
+
+.text-content h1 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.text-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.find-doctor-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.find-doctor-btn:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
