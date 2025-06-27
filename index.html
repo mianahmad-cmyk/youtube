@@ -1,14 +1,201 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Reward - Earn 100 Rupees</title>
-    <meta name="description" content="Subscribe to our YouTube channel and earn instant rewards through JazzCash or EasyPaisa. Get 100 Rupees for completing simple tasks." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <meta name="description" content="Subscribe to our YouTube channel and earn instant rewards through JazzCash or EasyPaisa. Get 100 Rupees for completing simple tasks.">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="gift-icon">🎁</span>
+                    <h1>Reward Task</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Landing Section -->
+            <section id="landing" class="section active">
+                <div class="landing-content">
+                    <div class="offer-badge">
+                        <span class="gift-icon">🎁</span>
+                        Limited Time Offer
+                    </div>
+                    
+                    <h1 class="main-title">
+                        🎁 Complete Task &<br>
+                        <span class="highlight">Get 100 Rupees</span>
+                    </h1>
+                    
+                    <p class="subtitle">
+                        Subscribe to our YouTube channel and earn instant rewards through JazzCash or EasyPaisa. 
+                        It's that simple!
+                    </p>
+
+                    <div class="reward-card">
+                        <div class="reward-icon">🎁</div>
+                        <h3>₨100 Reward</h3>
+                        <p>Instant payment via mobile wallet</p>
+                        
+                        <button id="openTaskBtn" class="btn btn-primary">
+                            Open Task
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task Section -->
+            <section id="task" class="section">
+                <div class="task-content">
+                    <div class="section-header">
+                        <div class="section-icon youtube-icon">📺</div>
+                        <h2>📌 Your Task</h2>
+                        <p>Subscribe to our YouTube channel to unlock your reward</p>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-info">
+                            <h3>Subscribe to our YouTube Channel</h3>
+                            <p>Click the button below to open our channel and subscribe</p>
+                            
+                            <button id="subscribeBtn" class="btn btn-youtube">
+                                📺 Subscribe Now
+                            </button>
+                        </div>
+
+                        <div class="task-next">
+                            <p>After subscribing, return to this page and click below:</p>
+                            
+                            <button id="subscribedBtn" class="btn btn-success">
+                                I Have Subscribed ✓
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section id="form" class="section">
+                <div class="form-content">
+                    <div class="section-header">
+                        <div class="section-icon">📤</div>
+                        <h2>Submit Your Proof</h2>
+                        <p>Upload screenshot and provide payment details</p>
+                    </div>
+
+                    <div class="form-card">
+                        <form id="submissionForm">
+                            <div class="form-group">
+                                <label for="screenshot">Upload Screenshot of Subscription *</label>
+                                <div class="file-upload" id="fileUpload">
+                                    <div class="upload-content">
+                                        <div class="upload-icon">📤</div>
+                                        <div class="upload-text">
+                                            <span class="upload-link">Upload a file</span>
+                                            <span> or drag and drop</span>
+                                        </div>
+                                        <p class="upload-hint">PNG, JPG, GIF up to 10MB</p>
+                                        <input type="file" id="screenshot" accept="image/*" required>
+                                        <div id="fileName" class="file-name"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="paymentNumber">Your JazzCash or EasyPaisa Number *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">📱</span>
+                                    <input 
+                                        type="tel" 
+                                        id="paymentNumber" 
+                                        placeholder="03XXXXXXXXX" 
+                                        required
+                                    >
+                                </div>
+                                <p class="input-hint">We'll send ₨100 to this number within 24 hours</p>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn btn-primary" disabled>
+                                Submit for Verification
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Thank You Section -->
+            <section id="thankyou" class="section">
+                <div class="thankyou-content">
+                    <div class="success-icon">✅</div>
+                    
+                    <h2>🎉 Thank You!</h2>
+                    <p class="thankyou-text">
+                        We have received your submission. Our team will verify your subscription and 
+                        send you <span class="highlight">₨100</span> within 24 hours.
+                    </p>
+
+                    <div class="process-card">
+                        <h3>What happens next?</h3>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <p>We verify your YouTube subscription</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <p>Payment is processed to your mobile wallet</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-check">✓</div>
+                                <p>You receive ₨100 within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>How It Works</h3>
+                
+                <div class="how-it-works">
+                    <div class="work-step">
+                        <div class="work-icon">👥</div>
+                        <h4>1. Subscribe</h4>
+                        <p>Subscribe to our YouTube channel to support our content</p>
+                    </div>
+                    
+                    <div class="work-step">
+                        <div class="work-icon">📤</div>
+                        <h4>2. Submit Proof</h4>
+                        <p>Upload screenshot and provide your mobile wallet number</p>
+                    </div>
+                    
+                    <div class="work-step">
+                        <div class="work-icon">⏰</div>
+                        <h4>3. Get Rewarded</h4>
+                        <p>Receive ₨100 in your account within 24 hours after verification</p>
+                    </div>
+                </div>
+
+                <div class="footer-security">
+                    <span class="security-icon">🛡️</span>
+                    <span>Secure and verified process</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
 </html>
